@@ -1,2 +1,8 @@
 dashboards/.data/*
 dashboards/__pycache__
+
+dashboards/*
+nuxt-app/*
+
+app/.data/*
+app/__pycache__

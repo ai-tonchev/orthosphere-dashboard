@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Ysabeau:ital,wght@0,400;0,700;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ysabeau:ital,wght@0,400;0,700;1,400&family=EB+Garamond:ital,wght@0,400;0,700;1,400&display=swap');
+
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Ysabeau', serif;
+  font-weight: 700; /* adjust to your preference */
+  letter-spacing: 0.5px;
+}
+
+
+body {
+    font-family: "EB Garamond", sans-serif;
+    background-color: #faf9f7;
+    color: #222;
+    font-size: 12pt;
+
+}
+
+.navbar {
+    font-size: 20px;
+    margin: 20px;
+}
+
+a {
+    color: #0044cc;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+
+.site-header {
+  text-align: center;
+  padding: 20px 0 10px 0;
+  /* border-bottom: 1px solid #ddd; */
+  background-color: #f8f8f8;
+}
+
+/* Main title */
+.site-title {
+  font-family: 'Ysabeau', sans-serif;
+  font-weight: 700;
+  font-size: 3rem;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+  color: #222;
+
+}
+
+.site-title a {
+  color: #222;
+  text-decoration: none;
+  /* font-size: 1.4rem; */
+  letter-spacing: 0.4px;
+  transition: color 0.2s ease, border-bottom 0.2s ease;
+  /* border-bottom: 2px solid transparent; */
+  padding-bottom: 2px;
+}
+
+.navbar {
+  font-family: 'Ysabeau', sans-serif;
+  font-weight: 600;
+  background-color: #f8f8f8;
+  padding: 5px 10px;
+  /* border-bottom: 1px solid #ddd; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.navbar a {
+  color: #222;
+  text-decoration: none;
+  font-size: 1.4rem;
+  letter-spacing: 0.4px;
+  /* transition: color 0.2s ease, border-bottom 0.2s ease; */
+  /* border-bottom: 2px solid transparent; */
+  padding-bottom: 2px;
+}
+
+/* Hover + active state */
+.navbar a:hover {
+  color: #0044aa;
+  /* border-bottom: 2px solid #0044aa; */
+
+}
+
+/* Optional: highlight current page */
+.navbar a.active {
+  color: #0044aa;
+  /* border-bottom: 2px solid #0044aa; */
+}
+
