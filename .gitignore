@@ -6,3 +6,5 @@ nuxt-app/*
 
 app/.data/*
 app/__pycache__
+
+*.pem

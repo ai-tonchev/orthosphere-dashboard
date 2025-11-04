@@ -3,6 +3,9 @@ numpy
 scikit-learn
 bertopic
 sentence-transformers
-
+dash
 bokeh
 matplotlib
+gunicorn
+pyarrow
+openpyxl

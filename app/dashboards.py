@@ -182,7 +182,7 @@ class VectorQueryDashboard(BaseDashboard):
                 html.H3(f"Top {n_results} Results"),
                 html.Ul([
                     html.Li([
-                        html.B(f'{r["title"]} (by {r["name"]}; distance {r['distance']: .2f}): '),
+                        html.B(f'{r["title"]} (by {r["name"]}; distance {r["distance"]: .2f}): '),
                         html.Span(r["content"])
                     ]) for r in results
                 ])
@@ -213,7 +213,7 @@ class VectorQueryDashboard(BaseDashboard):
                 html.H3(f"Selected {len(indices)} Results"),
                 html.Ul([
                     html.Li([
-                        html.B(f'{i["title"]} (by {i["name"]} on {i['date'].strftime('%d.%m.%Y')}): '),
+                        html.B(f'{i["title"]} (by {i["name"]} on {i["date"].strftime("%d.%m.%Y")}): '),
                         html.Span(i["content"])
                     ]) for i in df.to_dict(orient="records")
                 ])

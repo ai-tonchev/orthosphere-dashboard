@@ -61,6 +61,8 @@ from pages import topic_model, query
 topic_model.register_callbacks(app)
 query.register_callbacks(app)
 
+server = app.server
 
 if __name__ == "__main__":
     app.run(debug=True, host = '0.0.0.0', port = 8050)
+    
