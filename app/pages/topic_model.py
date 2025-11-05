@@ -3,7 +3,7 @@ from dashboards import TopicModelDashboard
 
 from app import dm
 
-dash.register_page(__name__, path="/topic_model")
+dash.register_page(__name__, path="/topic_model", title='Orthosphere Topic Model')
 t = TopicModelDashboard(data_manager=dm)
 layout = t.layout
 

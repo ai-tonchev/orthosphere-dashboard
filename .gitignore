@@ -4,6 +4,8 @@
 # dashboards/*
 # nuxt-app/*
 
+app/docker-compose.yml
+script.sh
 app/.data/*
 app/__pycache__
 

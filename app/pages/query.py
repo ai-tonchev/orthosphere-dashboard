@@ -1,7 +1,7 @@
 import dash
 from dashboards import VectorQueryDashboard
 
-dash.register_page(__name__, path="/query")
+dash.register_page(__name__, path="/query", title='Orthosphere Vector Query')
 
 # Reuse the shared data manager from app.py
 from app import dm
