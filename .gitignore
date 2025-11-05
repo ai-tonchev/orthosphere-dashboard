@@ -10,3 +10,5 @@ app/.data/*
 app/__pycache__
 
 *.pem
+
+.deploy/*
