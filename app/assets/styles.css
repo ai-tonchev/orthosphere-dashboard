@@ -11,20 +11,27 @@ h1, h2, h3, h4, h5, h6 {
 
 body {
     font-family: "EB Garamond", sans-serif;
-    background-color: #faf9f7;
+    background-color: #ffffee;
     color: #222;
     font-size: 12pt;
 
+
 }
+
+
+
 
 .navbar {
     font-size: 20px;
     margin: 20px;
+    text-align: center;
+    
 }
 
 a {
     color: #0044cc;
     text-decoration: none;
+    
 }
 
 a:hover {
@@ -36,7 +43,8 @@ a:hover {
   text-align: center;
   padding: 20px 0 10px 0;
   /* border-bottom: 1px solid #ddd; */
-  background-color: #f8f8f8;
+  /* background-color: #f8f8f8; */
+  background-color: #faf7e6;
 }
 
 /* Main title */
@@ -63,7 +71,7 @@ a:hover {
 .navbar {
   font-family: 'Ysabeau', sans-serif;
   font-weight: 600;
-  background-color: #f8f8f8;
+  /* background-color: #f8f8f8; */
   padding: 5px 10px;
   /* border-bottom: 1px solid #ddd; */
   display: flex;
@@ -80,6 +88,7 @@ a:hover {
   /* transition: color 0.2s ease, border-bottom 0.2s ease; */
   /* border-bottom: 2px solid transparent; */
   padding-bottom: 2px;
+  border-bottom:1px solid
 }
 
 /* Hover + active state */

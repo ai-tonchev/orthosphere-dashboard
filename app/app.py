@@ -12,19 +12,19 @@ pio.templates["orthosphere"] = pio.templates["plotly_white"]
 pio.templates["orthosphere"].layout.update(
     font=dict(family="Garamond, Ysabeau, serif", size=16, color="#222"),
     title=dict(font=dict(family="Ysabeau, sans-serif", size=22, color="#111")),
-    paper_bgcolor="#fafafa",
-    plot_bgcolor="#ffffff",
+    paper_bgcolor="#ffffee",
+    plot_bgcolor="#ffffee",
     margin=dict(l=50, r=30, t=60, b=50),
     xaxis=dict(
         showgrid=True,
-        gridcolor="#e6e6e6",
+        gridcolor="#ffffee",
         zeroline=False,
         linecolor="#ccc",
         tickfont=dict(size=14)
     ),
     yaxis=dict(
         showgrid=True,
-        gridcolor="#e6e6e6",
+        gridcolor="#ffffee",
         zeroline=False,
         linecolor="#ccc",
         tickfont=dict(size=14)

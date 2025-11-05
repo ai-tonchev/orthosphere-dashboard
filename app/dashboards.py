@@ -238,25 +238,49 @@ class TopicModelDashboard(BaseDashboard):
         fig3 = topic_model.visualize_topics_over_time(topics_over_time, topics=[range(5)])
         text = html.Div([])
         
+        for fig in [fig1, fig2, fig3]:
+        
+            fig.update_layout(
+                paper_bgcolor="#ffffee",
+                plot_bgcolor="#ffffee",
+                font=dict(family="Garamond, serif", color="#222")
+            )
+
+        
         for trace in fig1.data:
             if hasattr(trace, 'customdata') and trace.customdata is not None:
                 continue
             trace.customdata = list(range(len(trace.x)))
         
         layout = html.Div([
-            html.H1("Orthosphere Topic Analysis Dashboard"),
+            html.H1("Orthosphere Topic Analysis Dashboard", style={"textAlign": "center"}),
+            
+            html.H2('Topic Overview', style={"textAlign": "center"}),
             html.Div([
+                
                 dcc.Graph(figure=fig1, id='graph'),
                 dcc.Graph(figure=fig2, id='bars')
-            ], style={"display": "flex", "gap": "20px"}),
+            ], style={"display": "flex",
+                "justifyContent": "center",   # center horizontally
+                "gap": "20px",
+                "marginBottom": "40px"}),
+            
+            
             html.Div([
                 dcc.Graph(
                     figure=fig3, id='timeline'
                 )
-            ]),
+            ], style={"display": "flex",
+                "justifyContent": "center",   # center horizontally
+                "gap": "20px",
+                "marginBottom": "40px"}),
+            
+            
+            html.H2('Representative Texts', style={"textAlign": "center"}),
             html.Div([
                 html.Div(text, id='text-display')
-            ])
+            ]),
+            
         ])
         
         return layout
@@ -276,6 +300,11 @@ class TopicModelDashboard(BaseDashboard):
 
             # filtered = df[df.year == int(year)]
             fig = self.data_manager.topic_model.visualize_barchart(topics)
+            fig.update_layout(
+                paper_bgcolor="#ffffee",
+                plot_bgcolor="#ffffee",
+                font=dict(family="Garamond, serif", color="#222")
+            )
             return fig
 
         @app.callback(
@@ -291,6 +320,11 @@ class TopicModelDashboard(BaseDashboard):
 
             # filtered = df[df.year == int(year)]
             fig = self.data_manager.topic_model.visualize_topics_over_time(self.data_manager.topics_over_time, topics=topics)
+            fig.update_layout(
+                paper_bgcolor="#ffffee",
+                plot_bgcolor="#ffffee",
+                font=dict(family="Garamond, serif", color="#222")
+            )
             return fig
 
         @app.callback(
