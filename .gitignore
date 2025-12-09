@@ -7,7 +7,9 @@
 app/docker-compose.yml
 script.sh
 app/.data/*
-app/__pycache__
+__pycache__
+
+pages/__pycache__
 
 *.pem
 
