@@ -7,3 +7,4 @@ dash
 matplotlib
 pyarrow
 openpyxl
+gunicorn
